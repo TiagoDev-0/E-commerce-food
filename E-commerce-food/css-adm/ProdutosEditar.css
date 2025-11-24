@@ -1,0 +1,26 @@
+.card {
+    border-radius: 12px;
+}
+
+#imgPreview {
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.card {
+    border-radius: 12px;
+}
+
+#imgPreview {
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: 500;
+}

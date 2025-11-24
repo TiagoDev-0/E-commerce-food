@@ -1,0 +1,341 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+    .admin-header h1 {
+        font-weight: bold;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .admin-header .breadcrumb {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    .admin-header .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .admin-header .breadcrumb-item a:hover {
+            color: white;
+        }
+
+    .admin-header .breadcrumb-item.active {
+        color: white;
+    }
+
+.stats-cards {
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid;
+    text-align: center;
+}
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .stat-card.pendente {
+        border-color: #ffc107;
+    }
+
+    .stat-card.preparo {
+        border-color: #0dcaf0;
+    }
+
+    .stat-card.entregue {
+        border-color: #198754;
+    }
+
+    .stat-card.cancelado {
+        border-color: #dc3545;
+    }
+
+    .stat-card i {
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.alert-custom {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.filter-section {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .filter-section .form-label {
+        color: #495057;
+        margin-bottom: 8px;
+    }
+
+    .filter-section .form-select,
+    .filter-section .form-control {
+        border-radius: 10px;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+
+        .filter-section .form-select:focus,
+        .filter-section .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+.card-custom {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+    overflow: hidden;
+}
+
+.card-header-custom {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    border: none;
+}
+
+    .card-header-custom h4 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+.table-custom {
+    margin: 0;
+}
+
+    .table-custom thead {
+        background: #f8f9fa;
+    }
+
+    .table-custom th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        color: #495057;
+        border: none;
+        padding: 15px;
+        white-space: nowrap;
+    }
+
+    .table-custom td {
+        vertical-align: middle;
+        padding: 15px;
+        border-color: #f0f0f0;
+    }
+
+    .table-custom tbody tr {
+        transition: all 0.3s ease;
+    }
+
+        .table-custom tbody tr:hover {
+            background: #f8f9fa;
+            transform: scale(1.01);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+.badge-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+.badge-pendente {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.badge-preparo,
+.badge-empreparo {
+    background: #cff4fc;
+    color: #055160;
+}
+
+.badge-entregue {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.badge-cancelado {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.btn-action {
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+}
+
+    .btn-action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-action:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+
+.pedido-id {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.valor-total {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+    .empty-state i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.5;
+    }
+
+    .empty-state h4 {
+        margin-bottom: 10px;
+        color: #495057;
+    }
+
+@media (max-width: 768px) {
+    .admin-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .stat-card {
+        margin-bottom: 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .filter-section .col-md-4 {
+        margin-bottom: 15px;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn-action {
+        width: 100%;
+    }
+
+    .table-custom {
+        font-size: 0.85rem;
+    }
+
+        .table-custom th,
+        .table-custom td {
+            padding: 10px;
+        }
+}
+
+@media (max-width: 576px) {
+    .admin-header {
+        padding: 20px 0;
+    }
+
+    .card-header-custom {
+        padding: 15px;
+    }
+
+    .stat-card i {
+        font-size: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.table-custom tbody tr {
+    animation: fadeIn 0.3s ease;
+}

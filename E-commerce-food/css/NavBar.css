@@ -1,0 +1,162 @@
+﻿/* Navbar principal */
+.navbar-custom {
+    background-color: #663399; /* RebeccaPurple */
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(102, 51, 153, 0.4);
+}
+
+    /* Container flex interno */
+    .navbar-custom .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Logo e link principal */
+    .navbar-custom a.d-flex.align-items-center {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Navegação principal */
+    .navbar-custom ul.nav {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+        .navbar-custom ul.nav li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0.75rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .navbar-custom ul.nav li a.text-secondary {
+                color: #cdb4db; /* roxo mais claro para o link ativo/início */
+            }
+
+            .navbar-custom ul.nav li a:hover,
+            .navbar-custom ul.nav li a:focus {
+                background-color: #8a2be2; /* BlueViolet */
+                color: white;
+            }
+
+    /* Formulário de busca */
+    .navbar-custom form {
+        flex-grow: 1;
+        max-width: 300px;
+        margin-left: 1rem;
+    }
+
+    .navbar-custom input.form-control {
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        border-radius: 25px;
+        border: none;
+        background-color: #5d3a99; /* roxo escuro */
+        color: white;
+        transition: width 0.3s ease, background-color 0.3s ease;
+    }
+
+        .navbar-custom input.form-control::placeholder {
+            color: #d1c4e9;
+        }
+
+        .navbar-custom input.form-control:focus {
+            background-color: #7e57c2; /* roxo claro */
+            width: 250px;
+            outline: none;
+            color: white;
+        }
+
+    /* Botões na direita */
+    .navbar-custom .text-end {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* Botão de toggle do tema */
+    .navbar-custom button#theme-toggle {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .navbar-custom button#theme-toggle:hover {
+            background-color: #8a2be2;
+            border-color: #8a2be2;
+            color: white;
+        }
+
+    /* Botão do carrinho */
+    .navbar-custom a.btn-warning {
+        position: relative;
+        background-color: #ffb300; /* amarelo vibrante */
+        border: none;
+        color: black;
+        padding: 0.5rem 0.75rem;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+    }
+
+        .navbar-custom a.btn-warning:hover {
+            background-color: #ffa000;
+            color: black;
+        }
+
+/* Badge do carrinho */
+#carrinho-count {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    background-color: #d32f2f; /* vermelho intenso */
+    padding: 0.2em 0.4em;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+/* Para texto branco geral (header) */
+.navbar-custom .text-white {
+    color: white !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-custom ul.nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .navbar-custom form {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar-custom .text-end {
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+}

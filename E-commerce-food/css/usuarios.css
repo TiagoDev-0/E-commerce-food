@@ -1,0 +1,455 @@
+/* ========================================
+   USUARIOS.CSS - Estilos da Página de Usuários
+   ======================================== */
+
+/* BODY E LAYOUT GERAL */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========================================
+   HEADER ADMIN
+   ======================================== */
+
+.admin-header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+    .admin-header h1 {
+        font-weight: bold;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .admin-header .breadcrumb {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
+
+    .admin-header .breadcrumb-item a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .admin-header .breadcrumb-item a:hover {
+            color: white;
+        }
+
+    .admin-header .breadcrumb-item.active {
+        color: white;
+    }
+
+/* ========================================
+   CARDS DE ESTATÍSTICAS
+   ======================================== */
+
+.stats-cards {
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid;
+    text-align: center;
+}
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .stat-card.total {
+        border-color: #0d6efd;
+    }
+
+    .stat-card.ativos {
+        border-color: #198754;
+    }
+
+    .stat-card.bloqueados {
+        border-color: #dc3545;
+    }
+
+    .stat-card.novos {
+        border-color: #0dcaf0;
+    }
+
+    .stat-card i {
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   MENSAGENS DE FEEDBACK
+   ======================================== */
+
+.alert-custom {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   BARRA DE BUSCA
+   ======================================== */
+
+.search-section {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    position: relative;
+}
+
+    .search-box i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6c757d;
+        font-size: 1.1rem;
+    }
+
+    .search-box .form-control {
+        padding-left: 45px;
+        border-radius: 10px;
+        border: 2px solid #e9ecef;
+        transition: all 0.3s ease;
+    }
+
+        .search-box .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+.form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+    .form-select:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    }
+
+/* ========================================
+   CARD PERSONALIZADO
+   ======================================== */
+
+.card-custom {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+    overflow: hidden;
+}
+
+.card-header-custom {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+    border: none;
+}
+
+    .card-header-custom h4 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+/* ========================================
+   TABELA CUSTOMIZADA
+   ======================================== */
+
+.table-custom {
+    margin: 0;
+}
+
+    .table-custom thead {
+        background: #f8f9fa;
+    }
+
+    .table-custom th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        color: #495057;
+        border: none;
+        padding: 15px;
+        white-space: nowrap;
+    }
+
+    .table-custom td {
+        vertical-align: middle;
+        padding: 15px;
+        border-color: #f0f0f0;
+    }
+
+    .table-custom tbody tr {
+        transition: all 0.3s ease;
+    }
+
+        .table-custom tbody tr:hover {
+            background: #f8f9fa;
+            transform: scale(1.01);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+/* ========================================
+   INFORMAÇÕES DO USUÁRIO
+   ======================================== */
+
+.user-id {
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.user-details {
+    flex: 1;
+}
+
+    .user-details strong {
+        color: #212529;
+        font-size: 1rem;
+    }
+
+    .user-details small {
+        font-size: 0.85rem;
+        margin-top: 2px;
+    }
+
+.contact-info {
+    font-size: 0.9rem;
+}
+
+    .contact-info div {
+        margin-bottom: 5px;
+    }
+
+    .contact-info i {
+        width: 16px;
+        margin-right: 5px;
+    }
+
+/* ========================================
+   BADGES DE STATUS
+   ======================================== */
+
+.badge-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge-ativo {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.badge-bloqueado {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ========================================
+   BOTÕES DE AÇÃO
+   ======================================== */
+
+.btn-action {
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+}
+
+    .btn-action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-action:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none !important;
+    }
+
+/* ========================================
+   ESTADO VAZIO
+   ======================================== */
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6c757d;
+}
+
+    .empty-state i {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        opacity: 0.5;
+    }
+
+    .empty-state h4 {
+        margin-bottom: 10px;
+        color: #495057;
+    }
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .admin-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .stat-card {
+        margin-bottom: 15px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .search-section .col-md-6,
+    .search-section .col-md-3 {
+        margin-bottom: 15px;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn-action {
+        width: 100%;
+    }
+
+    .table-custom {
+        font-size: 0.85rem;
+    }
+
+        .table-custom th,
+        .table-custom td {
+            padding: 10px;
+        }
+
+    .user-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-header {
+        padding: 20px 0;
+    }
+
+    .card-header-custom {
+        padding: 15px;
+    }
+
+    .stat-card i {
+        font-size: 1.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+}
+
+/* ========================================
+   ANIMAÇÕES ADICIONAIS
+   ======================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.table-custom tbody tr {
+    animation: fadeIn 0.3s ease;
+}

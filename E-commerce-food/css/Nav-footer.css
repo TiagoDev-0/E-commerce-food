@@ -1,0 +1,112 @@
+.navbar-custom {
+    background-color: #E63946;
+    color: #fff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .navbar-custom.scrolled {
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .navbar-custom .nav-link {
+        color: #fff !important;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+        .navbar-custom .nav-link:hover {
+            color: #FFD166 !important;
+            transform: scale(1.05);
+        }
+
+.btn-nav,
+.btn-danger {
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.btn-nav {
+    background: #444;
+    color: white;
+}
+
+    .btn-nav:hover {
+        background: #666;
+        transform: translateY(-2px);
+    }
+
+.btn-danger {
+    background: #d9534f;
+    color: white;
+}
+
+    .btn-danger:hover {
+        background: #c9302c;
+        transform: translateY(-2px);
+    }
+
+.navbar-custom .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    transition: 0.3s;
+}
+
+    .navbar-custom .btn-outline-light:hover {
+        background-color: #fff;
+        color: #E63946;
+    }
+
+.navbar-custom .form-control {
+    background-color: #c62828;
+    border: none;
+    color: white;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+    .navbar-custom .form-control:focus {
+        background-color: #b71c1c;
+        box-shadow: 0 0 0 2px rgba(255, 209, 102, 0.6);
+    }
+
+    .navbar-custom .form-control::placeholder {
+        color: #f5f5f5;
+    }
+
+.navbar-custom img {
+    height: 45px;
+    width: auto;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .navbar-custom img:hover {
+        transform: scale(1.05);
+    }
+
+.footer {
+    color: white;
+    background-color: #E63946;
+    text-align: left;
+    width: 100%;
+}
+
+    .footer .nav .nav-link:hover {
+        color: #FFD166 !important;
+    }
+
+.logo-footer {
+    max-height: 150px;
+    width: auto;
+}
+
+.material-symbols-outlined {
+    font-size: 26px;
+}
+
+.btn-remove:hover .material-symbols-outlined {
+    color: #b31515;
+    transform: scale(1.1);
+    transition: 0.17s ease;
+}
