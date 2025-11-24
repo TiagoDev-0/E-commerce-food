@@ -1,4 +1,4 @@
-﻿--Feito por : Alex, e Tiago--
+﻿Feito por : Alex, e Tiago
 
 
 # E-commerce Food
