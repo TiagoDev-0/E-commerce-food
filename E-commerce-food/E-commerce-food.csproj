@@ -146,7 +146,7 @@
     <Content Include="img\Logo-FoodExpress.png" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\Página.js" />
-    <Content Include="README.md.txt" />
+    <None Include="README.md" />
     <Content Include="Uploads\Burger1.jpg" />
     <Content Include="Uploads\burger2.jpg" />
     <Content Include="Uploads\burger3.jpg" />
